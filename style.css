@@ -1,4 +1,10 @@
+@font-face {
+    font-family: Norse;
+    src: url(./fonts/Norse-Bold.otf);
+  }
+
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,9 +58,10 @@ img {
     font-size: 20px;
     padding: 20px 40px;
     color: white;
-    background-color: rgb(0, 61, 0);
+    background-color: #596D48;
     border-radius: 20px;
     margin-bottom: 20px;
+    border: 0px;
 }
 
 .log-in {
@@ -63,7 +70,7 @@ img {
 }
 
 .log-in > a {
-    color:  rgb(0, 61, 0);
+    color:  #596D48;
     text-decoration: none;
 }
 
@@ -85,7 +92,8 @@ img {
 
 .odin-logo > div {
     color: white;
-    font-size: 100px;
+    font-family: Norse;
+    font-size: 200px;
 }
 
 .credits {
@@ -115,4 +123,16 @@ form {
 .right-block > input,
 .left-block > input {
     margin-bottom: 10px;
+}
+
+.signup-top > p > span {
+    font-style: italic;
+}
+
+
+
+input:focus {
+    outline: none;
+    box-shadow: 2px 2px 2px #596D48;
+    border: 2px solid #596D48;
 }
